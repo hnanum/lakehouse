@@ -1,0 +1,9 @@
+SELECT DISTINCT
+  Country
+FROM
+  gold_online_retail
+WHERE
+  Country IS NOT NULL
+  AND TRIM(Country) <> ''
+ORDER BY
+  Country
